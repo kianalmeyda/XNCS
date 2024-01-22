@@ -1,7 +1,7 @@
 {
   "facebookAccount": {
-    "email": "",
-    "password": "",
+    "email": "almeydaxynn@gmail.com",
+    "password": "Xynn10+",
     "2FASecret": "",
     "i_user": "",
     "proxy": null,
@@ -18,8 +18,7 @@
   },
   "adminBot": [
     "100009041075509",
-    "100056691825772",
-    "100021745339414"
+    ""
   ],
   "whiteListMode": {
     "enable": false,
@@ -52,11 +51,11 @@
   "dashBoard": {
     "enable": true,
     "expireVerifyCode": 300000,
-    "port": 3001
+    "port": 3000
   },
   "serverUptime": {
-    "enable": false,
-    "port": 3001,
+    "enable": true,
+    "port": 3000,
     "socket": {
       "enable": true,
       "channelName": "uptime",
@@ -68,23 +67,23 @@
     "notes": "you can set time is interval with milisecond or cron time, example: 1000, 10000, 60000, 3600000, 86400000, 0 0 * * *,... docs: https://www.npmjs.com/package/node-cron. If you set time is 0 or false or null, the bot will not auto restart"
   },
   "autoUptime": {
-    "enable": false,
+    "enable": true,
     "timeInterval": 180,
     "url": "",
     "notes": "the value of timeInterval is seconds, url is the url you want to send the request to (automatically detected for hosting glitch or replit)"
   },
   "autoLoadScripts": {
-    "enable": false,
+    "enable": true,
     "ignoreCmds": "",
     "ignoreEvents": "",
     "notes": "this feature will automatically load the script when scripts have been changed, you can set ignoreCmds to ignore commands, ignoreEvents to ignore events, separate by comma or space, example: \"cmd1.js cmd2.js cmd3.js\" (without backslash)"
   },
   "autoRefreshFbstate": true,
   "autoReloginWhenChangeAccount": false,
-  "autoRestartWhenListenMqttError": false,
+  "autoRestartWhenListenMqttError": true,
   "restartListenMqtt": {
-    "enable": true,
-    "timeRestart": 3600000,
+    "enable": false,
+    "timeRestart": 0,
     "delayAfterStopListening": 2000,
     "logNoti": true,
     "notes": "the value of timeRestart and delayAfterStopListening is milisecond, You shouldn't edit this if you don't know what it is"
